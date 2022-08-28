@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>作業実績報告書自動化</title>
+	</head>
+	<body>
+		<h1>★作業実績報告書自動化ツール★</h1>
+		
+		<form th:action="@{/work-report-input}" method="post">
+			<input type="submit" name="create" th:value="メール作成！"/>
+			<br>
+			<input type="submit" name="file" th:value="添付ファイル！"/>
+		</form>
+	</body>
+</html>
